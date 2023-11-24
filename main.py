@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import (
     qApp,
     QFileDialog,
 )
+from PyQt5.QtGui import QKeySequence
 import sys
 
 
@@ -38,8 +39,15 @@ class MainWindow(QMainWindow):
 
         # save action
         saveAction = QAction("Save", self)
+        saveAction.setShortcut(QKeySequence.Save)  # shortcut to Command+S
         saveAction.triggered.connect(self.saveFile)
         fileMenu.addAction(saveAction)
+
+        # exit action to exit the application
+        exitAction = QAction("Exit", self)
+        exitAction.setShortcut(QKeySequence.Quit)  # shortcut to Command+Q
+        exitAction.triggered.connect(qApp.quit)
+        fileMenu.addAction(exitAction)
 
     def openFile(self):
         options = QFileDialog.Options()
