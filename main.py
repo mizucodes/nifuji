@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import (
     qApp,
     QFileDialog,
 )
-from PyQt5.QtGui import QKeySequence
+from PyQt5.QtGui import QKeySequence, QIcon
 import sys
 
 
@@ -14,6 +14,9 @@ import sys
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        # Set the window icon
+        self.setWindowIcon(QIcon("resources/logo.png"))
 
         # configuration of the window
         self.setWindowTitle("nifuji")  # title of window
@@ -34,6 +37,7 @@ class MainWindow(QMainWindow):
 
         # open action
         openAction = QAction("Open", self)
+        openAction.setShortcut(QKeySequence.Open)  # shortcut to Command+O
         openAction.triggered.connect(self.openFile)
         fileMenu.addAction(openAction)
 
