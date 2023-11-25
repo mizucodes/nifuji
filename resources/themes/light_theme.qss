@@ -1,0 +1,25 @@
+QTextEdit {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Monospace';
+    font-size: 12px;
+}
+
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+QMenuBar {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+QMenu {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+QToolBar {
+    background-color: #f2f2f2;
+    border: none;
+}

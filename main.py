@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import QApplication
 from mainWindow import MainWindow  # Import the MainWindow class
+from themeManager import ThemeManager
 import sys
 
 
