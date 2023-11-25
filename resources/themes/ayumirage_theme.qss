@@ -1,0 +1,47 @@
+/* Ayu Mirage inspired color scheme */
+/* Style for the text editor */
+QTextEdit {
+    background-color: #1f2430; /* Dark background */
+    color: #cbccc6; /* Light text */
+    font-family: 'Monospace';
+    font-size: 12px;
+    selection-background-color: #343f4c; /* Selection background */
+}
+
+/* Style for the main window background */
+QMainWindow {
+    background-color: #1f2430; /* Dark background */
+}
+
+/* Style for the menu bar */
+QMenuBar {
+    background-color: #1f2430; /* Dark background */
+    color: #cbccc6; /* Light text */
+}
+
+QMenuBar::item:selected {
+    background-color: #343f4c; /* Selection background */
+    color: #f29718; /* Accent color */
+}
+
+/* Style for menus */
+QMenu {
+    background-color: #1f2430; /* Dark background */
+    color: #cbccc6; /* Light text */
+}
+
+QMenu::item:selected {
+    background-color: #343f4c; /* Selection background */
+    color: #f29718; /* Accent color */
+}
+
+/* Style for the toolbar */
+QToolBar {
+    background-color: #1f2430; /* Dark background */
+    border: none;
+}
+
+QToolBar::item:selected {
+    background-color: #343f4c; /* Selection background */
+    color: #f29718; /* Accent color */
+}

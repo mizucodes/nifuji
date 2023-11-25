@@ -60,6 +60,18 @@ class MenuBar:
         lightThemeAction.triggered.connect(lambda: self.parent.applyTheme("light"))
         themesMenu.addAction(lightThemeAction)
 
+        # Add 'Warm Theme' action
+        warmThemeAction = QAction("Warm Theme", self.parent)
+        warmThemeAction.triggered.connect(lambda: self.parent.applyTheme("warm"))
+        themesMenu.addAction(warmThemeAction)
+
+        # Add 'Ayu Mirage' action
+        ayumirageThemeAction = QAction("Ayu Mirage Theme", self.parent)
+        ayumirageThemeAction.triggered.connect(
+            lambda: self.parent.applyTheme("ayumirage")
+        )
+        themesMenu.addAction(ayumirageThemeAction)
+
     def openFile(self):
         options = QFileDialog.Options()
         fileName, _ = QFileDialog.getOpenFileName(

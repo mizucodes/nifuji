@@ -1,0 +1,44 @@
+/* Style for the text editor */
+QTextEdit {
+    background-color: #5D3954; /* Dark warm purple */
+    color: #FACF5A; /* Warm yellow */
+    font-family: 'Monospace';
+    font-size: 12px;
+}
+
+/* Style for the main window background */
+QMainWindow {
+    background-color: #9E768F; /* Lighter purple */
+}
+
+/* Style for the menu bar */
+QMenuBar {
+    background-color: #5D3954; /* Dark warm purple */
+    color: #FACF5A; /* Warm yellow */
+}
+
+QMenuBar::item:selected {
+    background-color: #FACF5A; /* Warm yellow */
+    color: #5D3954; /* Dark warm purple */
+}
+
+/* Style for menus */
+QMenu {
+    background-color: #5D3954; /* Dark warm purple */
+    color: #FACF5A; /* Warm yellow */
+}
+
+QMenu::item:selected {
+    background-color: #FACF5A; /* Warm yellow */
+    color: #5D3954; /* Dark warm purple */
+}
+
+/* Style for the toolbar */
+QToolBar {
+    background-color: #5D3954; /* Dark warm purple */
+    border: none;
+}
+
+QToolBar::item:selected {
+    background-color: #FACF5A; /* Warm yellow */
+}
