@@ -47,6 +47,19 @@ class MenuBar:
         zoomOutAction.triggered.connect(self.zoomOut)
         editMenu.addAction(zoomOutAction)
 
+        # Add a 'Themes' menu
+        themesMenu = self.parent.menuBar().addMenu("Themes")
+
+        # Add 'Dark Theme' action
+        darkThemeAction = QAction("Dark Theme", self.parent)
+        darkThemeAction.triggered.connect(lambda: self.parent.applyTheme("dark"))
+        themesMenu.addAction(darkThemeAction)
+
+        # Add 'Light Theme' action
+        lightThemeAction = QAction("Light Theme", self.parent)
+        lightThemeAction.triggered.connect(lambda: self.parent.applyTheme("light"))
+        themesMenu.addAction(lightThemeAction)
+
     def openFile(self):
         options = QFileDialog.Options()
         fileName, _ = QFileDialog.getOpenFileName(
